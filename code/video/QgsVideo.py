@@ -160,7 +160,7 @@ class VideoWidgetSurface(QAbstractVideoSurface):
             # self.image = filter.change_contrast(self.image,20)
 
             painter.drawImage(self.targetRect, self.image, self.sourceRect)
-            # painter.setTransform(oldTransform)
+            painter.setTransform(oldTransform)
             self.currentFrame.unmap()
             self.currentFrame.release()
             # self.widget.update()
